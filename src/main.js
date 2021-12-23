@@ -1,8 +1,11 @@
 
-function itsTrue() {
-    return true;
+class Dog {
+    static breed = "German Shepherd";
+    static speed() {
+      return "48 km"
+    }
 }
 
 module.exports = {
-    itsTrue
+    Dog
 };
