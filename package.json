@@ -1,0 +1,25 @@
+{
+  "name": "js-test-template",
+  "version": "1.0.0",
+  "description": "Simple testing template for personal use.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kopahead/js-test-template.git"
+  },
+  "keywords": [
+    "testing"
+  ],
+  "author": "Elvis Magagula",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kopahead/js-test-template/issues"
+  },
+  "homepage": "https://github.com/kopahead/js-test-template#readme",
+  "devDependencies": {
+    "jest": "^27.0.6"
+  }
+}
