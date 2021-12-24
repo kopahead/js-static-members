@@ -43,8 +43,10 @@ class Cat2 {
 }
 
 class Cat3 {
-    static info(breedName, breedSpeed) {
-        return `The ${breedName}, travels a speed of ${breedSpeed}`;
+    static breedSpeed = '56.3 km/h';
+
+    static info(breedName) {
+        return `The ${breedName}, travels a speed of ${this.breedSpeed}`;
     }
 }
 
