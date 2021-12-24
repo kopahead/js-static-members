@@ -6,7 +6,7 @@ class Dog {
     }
 }
 
-class Cat {
+class Cat1 {
     constructor (breed) {
         this.breed = breed;
 
@@ -22,19 +22,59 @@ class Cat {
         const breed = this.breedDictionary[this.breed];
         return `The ${breed.name}, travels a speed of ${breed.speed}`;
     }
+}
 
-    static staticClassThatThrowsError() {
+class Cat2 {
+    constructor (breed) {
+        this.breed = breed;
+
+        this.breedDictionary = {
+            "bengal": {
+                "name": "Bengal",
+                "speed": "56.3 km/h"
+            }
+        }
+    }
+
+    static info() {
+        const breed = this.breedDictionary[this.breed];
+        return `The ${breed.name}, travels a speed of ${breed.speed}`;
+    }
+}
+
+class Cat3 {
+    static info(breedName, breedSpeed) {
+        return `The ${breedName}, travels a speed of ${breedSpeed}`;
+    }
+}
+
+class Cat4 {
+    constructor (breed) {
+        this.breed = breed;
+
+        this.breedDictionary = {
+            "bengal": {
+                "name": "Bengal",
+                "speed": "56.3 km/h"
+            }
+        }
+    }
+
+    complex() {
         const breed = this.breedDictionary[this.breed];
         return `The ${breed.name}, travels a speed of ${breed.speed}`;
     }
 
-    static staticClassThatUsesAClassInstance(breed) {
-        const cat = new Cat(breed);
-        return cat.info();
+    static info(breed) {
+        const cat = new Cat4(breed);
+        return cat.complex();
     }
 }
 
 module.exports = {
     Dog,
-    Cat
+    Cat1,
+    Cat2,
+    Cat3,
+    Cat4
 };
